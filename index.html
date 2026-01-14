@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Connect Spa Downloading Center</title>
+  <title>Connect Pluse Downloading Center</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -110,8 +110,8 @@
 <body>
   
   <div class="glass" id="mainMenu">
-    <h1 class="small-heading">𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝚂𝚙𝚊 𝙵𝚒𝚕𝚎𝚜 (06/11/25)</h1>
-    <button class="btn connect-spa-btn" onclick="openPage('connectspa')">📱 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝚂𝚙𝚊 𝙰𝚙𝚙 ( 𝚃𝙳 ) </button>
+    <h1 class="small-heading">𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝙿𝚕𝚞𝚜𝚎 𝙵𝚒𝚕𝚎𝚜 (06/11/25)</h1>
+    <button class="btn connect-spa-btn" onclick="openPage('connectpluse')">📱 𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝙿𝚕𝚞𝚜𝚎 𝙰𝚙𝚙 ( 𝚃𝙳 ) </button>
     </div>
 
   <div class="glass hidden" id="downloadPage">
@@ -130,17 +130,15 @@
       document.getElementById("mainMenu").classList.add("hidden");
       document.getElementById("downloadPage").classList.remove("hidden");
 
-      // Updated logic for the single 'connectspa' button
-      if (type === "connectspa") { 
-        document.getElementById("pageTitle").innerText = "𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝚂𝚙𝚊 𝙰𝙿𝙺";
+      // Updated logic for the single 'connectpluse' button
+      if (type === "connectpluse") { 
+        document.getElementById("pageTitle").innerText = "𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝙿𝚕𝚞𝚜𝚎 𝙰𝙿𝙺";
         document.getElementById("previewImg").src = "https://files.catbox.moe/rmf24j.jpg"; // Placeholder image
         // Updated description
         document.getElementById("desc").innerText = "𝙴𝚗𝚓𝚘𝚢 𝚃𝚑𝚎 𝙵𝚛𝚎𝚎 𝚃𝚛𝚒𝚊𝚕𝚜 𝚆𝚒𝚝𝚑 𝙻𝚒𝚝𝚝𝚕𝚎 𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜 ";
-        // **IMPORTANT**: This link should be updated to your Connect Spa App link. 
-        // Currently using the link from the removed 'diwali' option as a default.
-        currentLink = "https://www.mediafire.com/file/roecinwhlbu7ai2/Connecte_Spa_app_TDP.apk/file";
+        // **IMPORTANT**: This link should be updated to your Connect Pluse App link. 
+        currentLink = "https://www.mediafire.com/file/skawra3tzixzfum/Connect_Pluse_New_%2528TD_FRS%2529.apk/file";
       }
-      // Removed 'beta', 'full', and 'normal' logic
     }
 
     function startDownload() {
@@ -155,7 +153,7 @@
           countdownEl.innerText = "𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝙻𝚒𝚗𝚔 " + timeLeft + "s";
         } else {
           clearInterval(timer);
-          countdownEl.innerText = "𝓡𝓮𝓭𝓲𝚛𝚎𝚌𝚝𝓲𝚗𝚐";
+          countdownEl.innerText = "𝓓𝓲𝓻𝓮𝓬𝓽𝓲𝓷𝓰";
           window.open(currentLink, "_blank");
         }
       }, 1000);
